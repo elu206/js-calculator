@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+body{
+  font-size: 30px;
+  background-color: #07004a;
+  padding: 15px;
+  padding-top: 5px;
+  animation: colorChange 3s infinite;
+}
+
+img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  z-index: -1;
+  animation: backgroundImageFade 3s infinite;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+
+}
+
+input, button{
+  font-size: 20px;
+}
+
+input{
+  color: #f3b808;
+}
+
+button{
+  color: #07004a;
+  background-color: #f3b808;
+}
+
+@keyframes colorChange{
+  0% {color: #ffffff}
+  50% {color: #f3b808}
+  100% {color: #ffffff}
+}
+
+@keyframes backgroundImageFade{
+  0% {opacity: 0.7}
+  50% {opacity: 0}
+  100% {opacity:0.7}
+}
